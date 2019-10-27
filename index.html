@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is my first simple calculator using JavaScript, HTML and CSS">
+    <meta name="Author" content="Richard Gaertner">
+    <meta name=viewport content="width=device-width, initial-scale">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <form>
+        <label>Value 1:</label>
+        <input type="text" id="value1">
+        <br>
+        <label>Value 2:</label>
+        <input type="text" id="value2">
+        <br>
+        <value>Operator:</value>
+        <select id="operator">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select>
+        <button type="button" onclick="calc()">Calculate</button>
+    </form>
+    <div id="result"></div>
+</body>
+<script src="main.js"></script>
+</html>
