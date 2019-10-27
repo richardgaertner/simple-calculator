@@ -3,7 +3,7 @@ function calc() {
     let val2 = parseInt(document.querySelector("#value2").value);
     let op = document.querySelector("#operator").value;
 
-    if (op == "add") {
+    if (op === "add") {
         calculate = val1 + val2;
     } else if (op === "subtract") {
         calculate = val1 - val2;
@@ -13,5 +13,5 @@ function calc() {
         calculate = val1 / val2;
     }
 
-    document.querySelector("#result").innerHTML = "That Calculation Equals " + calculate;
+    document.querySelector('#result').innerHTML= "The answer is " + calculate;
 }

@@ -5,9 +5,12 @@
     <meta name="description" content="This is my first simple calculator using JavaScript, HTML and CSS">
     <meta name="Author" content="Richard Gaertner">
     <meta name=viewport content="width=device-width, initial-scale">
+    <link rel="stylesheet" href="main.css">
     <title>Simple Calculator</title>
 </head>
 <body>
+    <h1>Calculator</h1>
+    <h2>A basic calculator built using only HTML, CSS and JavaScript!</h2>
     <form>
         <label>Value 1:</label>
         <input type="text" id="value1">
@@ -15,16 +18,18 @@
         <label>Value 2:</label>
         <input type="text" id="value2">
         <br>
-        <value>Operator:</value>
-        <select id="operator">
+        <label for="operator">Operator:</label><select id="operator">
             <option value="add">Add</option>
             <option value="subtract">Subtract</option>
             <option value="multiply">Multiply</option>
             <option value="divide">Divide</option>
         </select>
+        <br>
         <button type="button" onclick="calc()">Calculate</button>
     </form>
+
     <div id="result"></div>
+
 </body>
 <script src="main.js"></script>
 </html>
